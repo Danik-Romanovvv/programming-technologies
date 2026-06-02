@@ -1,0 +1,19 @@
+@model WebApplicationRomanov2.Models.Boat
+
+@{ ViewBag.Title = "Форма лодки"; }
+<h2>Данные о плавсредстве</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(m => m.Id)
+
+    <div style="margin-bottom: 20px;">
+        <h3>@Html.LabelForModel()</h3>
+        @* EditorForModel генерирует форму ввода для всех свойств разом *@
+        @Html.EditorForModel()
+    </div>
+
+    <button type="submit">Сохранить данные</button>
+}
+
+<p>@Html.ActionLink("К списку", "Index")</p>

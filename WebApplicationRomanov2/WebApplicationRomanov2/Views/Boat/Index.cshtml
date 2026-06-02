@@ -1,0 +1,47 @@
+@using WebApplicationRomanov2.Helpers
+@model List<WebApplicationRomanov2.Models.Boat>
+
+@{
+    ViewBag.Title = "Парк лодок";
+              bool useInline = (bool)(ViewData["UseInlineHelper"] ?? true);
+}
+
+<h2>Управление лодочной станцией</h2>
+<p>
+    @Html.ActionLink("Добавить лодку", "Create") |
+    @Html.ActionLink("Использовать Внешний Хелпер", "Index", new { useInline = false }) |
+    @Html.ActionLink("Использовать Внутренний Хелпер", "Index", new { useInline = true })
+</p>
+
+@* Внутренний параметризованный метод *@
+@helper InlineBoatListHelper(List<WebApplicationRomanov2.Models.Boat> items)
+{
+    <table class="table" border="1" cellpadding="5">
+        <tr><th>Парк лодок (Внутренний хелпер)</th><th>Действия</th></tr>
+        @{
+            int i = 0;
+            // Использование цикла while (Вариант В)
+            while (i < items.Count)
+            {
+                var item = items[i];
+                <tr>
+                    <td>@item.BoatName</td>
+                    <td>
+                        @Html.ActionLink("Просмотр", "Details", new { id = item.Id }) |
+                        @Html.ActionLink("Редакт.", "Edit", new { id = item.Id })
+                    </td>
+                </tr>
+                i++;
+            }
+        }
+    </table>
+}
+
+@if (useInline)
+{
+@InlineBoatListHelper(Model)
+}
+else
+{
+@Html.BoatListExternal(Model)
+}

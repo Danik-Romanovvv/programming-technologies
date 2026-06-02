@@ -1,0 +1,14 @@
+@model WebApplicationRomanov2.Models.Boat
+
+@{ ViewBag.Title = "Просмотр лодки"; }
+<h2>Детальная информация</h2>
+
+<div style="margin-bottom: 20px;">
+    <h3>@Html.LabelForModel()</h3>
+    <div style="border: 1px solid #ccc; padding: 15px; max-width: 400px;">
+        @* DisplayForModel автоматически выводит все свойства модели *@
+        @Html.DisplayForModel()
+    </div>
+</div>
+
+<p>@Html.ActionLink("К списку", "Index")</p>

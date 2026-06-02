@@ -1,0 +1,66 @@
+﻿@model WebApplicationRomanov.Models.CalculatorModel
+
+@{
+    ViewBag.Title = "Калькулятор";
+}
+
+<h2>Калькулятор (Вариант 7, В, III, 3, V)</h2>
+
+@using (Html.BeginForm("Index", "Home", FormMethod.Post))
+{
+<div style="margin-bottom: 10px;">
+    @Html.LabelFor(m => m.Operand1, "Операнд 1:")
+    @Html.TextBoxFor(m => m.Operand1, new { @class = "textBoxStyle" })
+    @Html.ValidationMessageFor(m => m.Operand1)
+</div>
+
+<div style="margin-bottom: 10px;">
+    @Html.LabelFor(m => m.Operand2, "Операнд 2:")
+    @Html.TextBoxFor(m => m.Operand2, new { @class = "textBoxStyle" })
+    @Html.ValidationMessageFor(m => m.Operand2)
+</div>
+
+<div style="margin-bottom: 10px;">
+    <label>Операция (RadioButton):</label>
+
+    @Html.RadioButtonFor(m => m.Operation, "+", new { @checked = "checked" }) Сложение (+)
+
+    @Html.RadioButtonFor(m => m.Operation, "-") Вычитание (-)
+
+    @Html.RadioButtonFor(m => m.Operation, "*") Умножение (*)
+
+    @Html.RadioButtonFor(m => m.Operation, "/") Деление (/)
+</div>
+
+<div style="margin-bottom: 20px;">
+    <button type="submit" name="buttonAction" value="Вычислить">Вычислить</button>
+    <button type="submit" name="buttonAction" value="Очистить">Очистить</button>
+</div>
+}
+
+@if (Model.Result.HasValue)
+{
+<hr />
+<h3>Результат: @Model.Result</h3>
+
+    // Проверка результата с ViewBag.ExpectedResult
+    if (Model.Result == ViewBag.ExpectedResult)
+    {
+<p style="color: green;">Результат совпадает с ожидаемым значением (@ViewBag.ExpectedResult)!</p>
+    }
+    else
+    {
+<p style="color: orange;">Результат отличается от ожидаемого значения (@ViewBag.ExpectedResult).</p>
+    }
+}
+
+<hr />
+<p>
+    @Html.ActionLink("Посмотреть последнюю операцию (Session)", "ResultPage", "Home")
+</p>
+
+@section Scripts {
+    <script>
+        console.log("Секция скриптов загружена.");
+    </script>
+}

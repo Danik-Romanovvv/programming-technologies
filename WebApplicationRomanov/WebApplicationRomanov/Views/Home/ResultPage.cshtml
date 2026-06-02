@@ -1,0 +1,13 @@
+@{
+    ViewBag.Title = "Результат операции";
+}
+
+<h2>Дублирование сведений (Сессия)</h2>
+
+<p style="font-family: monospace; font-size: 16px;">
+    @ViewBag.ProcessedString
+</p>
+
+<p>
+    @Html.ActionLink("Вернуться к калькулятору", "Index", "Home")
+</p>

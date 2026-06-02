@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\\u0415\u0433\u043E\u0440\\Desktop\\WebApplicationRomanov\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5A4333-A41E-4CD7-A6EF-854445D39C3A}|WebApplicationRomanov\\WebApplicationRomanov.csproj|c:\\users\\\u0435\u0433\u043E\u0440\\desktop\\webapplicationromanov\\webapplicationromanov\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5A4333-A41E-4CD7-A6EF-854445D39C3A}|WebApplicationRomanov\\WebApplicationRomanov.csproj|solutionrelative:webapplicationromanov\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2E5A4333-A41E-4CD7-A6EF-854445D39C3A}|WebApplicationRomanov\\WebApplicationRomanov.csproj|c:\\users\\\u0435\u0433\u043E\u0440\\desktop\\webapplicationromanov\\webapplicationromanov\\models\\calculatormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2E5A4333-A41E-4CD7-A6EF-854445D39C3A}|WebApplicationRomanov\\WebApplicationRomanov.csproj|solutionrelative:webapplicationromanov\\models\\calculatormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0433\u043E\u0440\\Desktop\\WebApplicationRomanov\\WebApplicationRomanov\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplicationRomanov\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0433\u043E\u0440\\Desktop\\WebApplicationRomanov\\WebApplicationRomanov\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplicationRomanov\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:56:45.336Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalculatorModel.cs",
+              "DocumentMoniker": "C:\\Users\\\u0415\u0433\u043E\u0440\\Desktop\\WebApplicationRomanov\\WebApplicationRomanov\\Models\\CalculatorModel.cs",
+              "RelativeDocumentMoniker": "WebApplicationRomanov\\Models\\CalculatorModel.cs",
+              "ToolTip": "C:\\Users\\\u0415\u0433\u043E\u0440\\Desktop\\WebApplicationRomanov\\WebApplicationRomanov\\Models\\CalculatorModel.cs",
+              "RelativeToolTip": "WebApplicationRomanov\\Models\\CalculatorModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-25T11:56:23.472Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
